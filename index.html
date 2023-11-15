@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コード -->
+    <meta charset="utf-8" />
+    <!-- タイトル -->
+    <title>sakaue-Enjoy Fashion</title>
+    <!-- 概要欄(ページ説明) -->
+    <meta name="sakaue" content="シンプルかつカッコイイ服を求めて" />
+
+    <!-- CSS -->
+    <!-- リセット(ブラウザに左右されない) -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <!-- グーグルフォント -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Philosopher"
+      rel="stylesheet"
+    />
+    <!-- 自作スタイルシート -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- ファビコン -->
+    <!-- <link rel="icon" type="image/png" href="images/favicon.jpg" /> -->
+    <!-- ファビコン生成 -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon_package_v0.16 (1)/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon_package_v0.16 (1)/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon_package_v0.16 (1)/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="images/favicon_package_v0.16 (1)/site.webmanifest"
+    />
+    <link
+      rel="mask-icon"
+      href="images/favicon_package_v0.16 (1)/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <style>
+    .start {
+      background: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 9000;
+    }
+    .start p {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      z-index: 9999;
+      width: 280px;
+    }
+  </style>
+
+  <body>
+    <div class="start">
+      <p><img src="images/logo2.png" alt="Enjoy Fashion" /></p>
+    </div>
+    <div id="home" class="big-bg">
+      <header class="page-header wrapper">
+        <h1></h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="items.html">Items</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- /.page-header .wrapper -->
+    </div>
+    <!-- /#home .big-bg-->
+  </body>
+
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+  ></script>
+  <script>
+    // jQueryで最初にトップページを開いたときに画面全体やロゴをフェードさせる
+    setTimeout(function () {
+      $(".start p").fadeIn(1600);
+    }, 500); //0.5秒後にロゴをフェードイン!
+    setTimeout(function () {
+      $(".start").fadeOut(500);
+    }, 2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+  </script>
+</html>
